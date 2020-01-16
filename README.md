@@ -1,4 +1,4 @@
-# mcal - Implementation of Myanmar Calendar in C++ and Javascript
+# mmcal - Implementation of Myanmar Calendar in C++ and Javascript
 
 Description: Modern Myanmar Calendrical Calculations
 
