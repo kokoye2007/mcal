@@ -1,0 +1,27 @@
+Source: mmcal
+Section: utils
+Priority: optional
+Maintainer: kokoye2007 <kokoye2007@gmail.com>
+Build-Depends: cmake, debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: https://yan9a.github.io/mcal/
+Vcs-Browser: https://github.com/yan9a/mcal
+Vcs-Git: https://github.com/yan9a/mcal.git
+
+Package: mmcal
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Myanmar Calendar
+ Implementation of Myanmar Calendar in C++ and Javascript
+ Modern Myanmar Calendrical Calculations
+ Support - British, Gregorian, Julian Date to Myanmar Date.
+ Web Version is can be Display with English, Burmese, Mon.
+
+Package: mmcal-gui
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, notify-send, zenity, mmcal
+Description: Myanmar Calendar
+ Implementation of Myanmar Calendar in Javascript and Web.
+ Modern Myanmar Calendrical Calculations
+ Support - British, Gregorian, Julian Date to Myanmar Date.
+ can be Display with English, Burmese, Mon.

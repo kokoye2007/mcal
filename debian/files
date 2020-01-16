@@ -1,0 +1,4 @@
+mmcal-dbgsym_0.0~exp1-1_amd64.ddeb debug optional automatic=yes
+mmcal-gui_0.0~exp1-1_all.deb utils optional
+mmcal_0.0~exp1-1_amd64.buildinfo utils optional
+mmcal_0.0~exp1-1_amd64.deb utils optional

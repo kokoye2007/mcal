@@ -1,0 +1,14 @@
+Package: mmcal
+Version: 0.0~exp1-1
+Architecture: amd64
+Maintainer: kokoye2007 <kokoye2007@gmail.com>
+Installed-Size: 137
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Section: utils
+Priority: optional
+Homepage: https://yan9a.github.io/mcal/
+Description: Myanmar Calendar
+ Implementation of Myanmar Calendar in C++ and Javascript
+ Modern Myanmar Calendrical Calculations
+ Support - British, Gregorian, Julian Date to Myanmar Date.
+ Web Version is can be Display with English, Burmese, Mon.

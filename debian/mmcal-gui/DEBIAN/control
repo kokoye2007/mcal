@@ -1,0 +1,15 @@
+Package: mmcal-gui
+Source: mmcal
+Version: 0.0~exp1-1
+Architecture: all
+Maintainer: kokoye2007 <kokoye2007@gmail.com>
+Installed-Size: 13
+Depends: notify-send, zenity, mmcal
+Section: utils
+Priority: optional
+Homepage: https://yan9a.github.io/mcal/
+Description: Myanmar Calendar
+ Implementation of Myanmar Calendar in Javascript and Web.
+ Modern Myanmar Calendrical Calculations
+ Support - British, Gregorian, Julian Date to Myanmar Date.
+ can be Display with English, Burmese, Mon.

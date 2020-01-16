@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+%:
+
+	sed -i "s|project (cedate)|project (mmcal)|g" ./cpp/eg/cedate/CMakeLists.txt
+	sed -i "s|add_executable(cedate |add_executable(mmcal |g" ./cpp/eg/cedate/CMakeLists.txt
+
+	dh $@ --buildsystem=cmake --sourcedirectory=./cpp/eg/cedate/
+override_dh_usrlocal:
+
+#override_dh_auto_install:
+#	sed -i -e 's/\-P/\-DCOMPONENT\=app1\ \-P/g' obj-$(DEB_HOST_MULTIARCH)/Makefile
+#	dh_auto_install --destdir=debian/app1
+#        sed -i -e 's/\-DCOMPONENT\=app1/\-DCOMPONENT\=app2/g' obj-$(DEB_HOST_MULTIARCH)/Makefile
+#        dh_auto_install --destdir=debian/app2
+#override_dh_auto_install:
+#	$(MAKE) install DESTDIR=debian/mmcal prefix=/usr/local 
+#	$(MAKE) DESTDIR=$$(pwd)/debian/hithere prefix=/usr install
+
+#override_dh_auto_configure:
+#	dh_auto_configure -- --prefix=/usr/local/

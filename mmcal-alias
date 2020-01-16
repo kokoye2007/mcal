@@ -1,0 +1,9 @@
+alias mmcal-sasana='mmcal | awk  'NR==4{print $}''
+alias mmcal-burmese='mmcal | awk  'NR==2{print }''
+alias mmcal-year='mmcal | awk  'NR==5{print }''
+alias mmcal-naga='mmcal | awk  'NR==6{print }''
+alias mmcal-mahabote='mmcal | awk  'NR==7{print }''
+alias mmcal-gui='zenity --info --title="Myanmar Calendar" --icon-name=calendar --width=300 --height=200 --text="$(mmcal)"'
+
+notify-send -i calendar "$(./obj-x86_64-linux-gnu/mmcal | awk  'NR==2,NR==3{print $0}')"
+
