@@ -5,7 +5,6 @@
 ## Maintain by kokoye2007
 
 ## Variables
-IPATCH=/usr/share/icons/
 NS=$(which notify-send 2>/dev/null)
 KDIALOG=$(which kdialog 2>/dev/null) || KDIALOG=''
 ZENITY=$(which zenity 2>/dev/null) || ZENITY=''
@@ -55,13 +54,13 @@ opts ()
 {
 case $OPT in
 g | -g | --gnome) # gnome clander icon
-ICON='gcalendar.png'
+ICON='gcalendar'
 ;;
 c | -c | --calendar) # clander icon
-ICON='mmcal.png'
+ICON='mmcal'
 ;;
 l | -l | --lotus) # lotus icon
-ICON='lotus.png'
+ICON='lotus'
 ;;
 h | -h | --help) # Help 
 OPTION='h'
@@ -98,7 +97,7 @@ esac
 
 
 # Set default icon here
-ICON='mmcal.png'
+ICON='mmcal'
 
 # Default is to call mmcal with out options, thus OPTION=''
 OPTION=''
@@ -129,7 +128,7 @@ done
 case $OPTION in
 s)
 MMCAL="`mmcal | sed '4!d;'`"
-ICON=lotus.png
+ICON=lotus
 ;;
 b)
 MMCAL="`mmcal | sed '2,3!d;'`"
@@ -157,7 +156,7 @@ elif [ -z "$DIALOG" ]; then
     if [ "$OPTION" == h ]; then 
 	    usage 
     elif [ -x "$NS" ]; then
-        "$NS" -t 16000 "Myanmar Calendar" "$MMCAL" -i "${IPATCH}${ICON}" &>/dev/null || echo -e '\e[0;31m' "notify-send failed";echo -e '\e[0m' ""
+        "$NS" -t 16000 "Myanmar Calendar" "$MMCAL" -i "${ICON}" &>/dev/null || echo -e '\e[0;31m' "notify-send failed";echo -e '\e[0m' ""
     else
         echo -e '\e[0;31m' "Please install libnotify";echo -e '\e[0m' ""
     exit 0
@@ -174,7 +173,7 @@ else
     ;;
     zenity)
         if [ ! -z "$ZENITY" ]; then
-            $ZENITY --icon-name="${ICON}" --width=300 --info --title="Myanmar Calendar" --text="${MMCAL}" &>/dev/null
+            $ZENITY --info --title="Myanmar Calendar" --text="${MMCAL}" --icon-name="${ICON}" --width=300  &>/dev/null
         else
             "$NS" -t 16000 "Myanmar Calendar" "$MMCAL" -i "${ICON}" &>/dev/null
         fi
