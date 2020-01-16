@@ -1,0 +1,13 @@
+Package: mmcal-dbgsym
+Package-Type: ddeb
+Source: mmcal
+Version: 0.0~exp1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: kokoye2007 <kokoye2007@gmail.com>
+Installed-Size: 1334
+Depends: mmcal (= 0.0~exp1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mmcal
+Build-Ids: 2b0d9fd9de9da510aa73899a62bc26293769552a
