@@ -2,7 +2,7 @@
 
 Description: Modern Myanmar Calendrical Calculations
 
-WebSite: https://yan9a.github.io/mcal/
+WebSite: https://yan9a.github.io/mmcal/
 
 MIT License (https://opensource.org/licenses/MIT)
 
@@ -17,7 +17,7 @@ See the detail explanations about Myanmar Calendar at
 
 To get the source from github, you can visit to 
 
-[https://github.com/yan9a/mcal](https://github.com/yan9a/mcal)
+[https://github.com/yan9a/mmcal](https://github.com/yan9a/mcal)
 
 and click --Clone or download-- button near the upper right corner.
 It consists of both C++ and Javascript source code in **[cpp](https://github.com/yan9a/mcal/tree/master/cpp)** and **[javascript](https://github.com/yan9a/mcal/tree/master/javascript)** folders respectively.
@@ -106,3 +106,6 @@ $ cmake ..
 $ make
 $ ./cedate
 ```
+
+#### Download DEB
+* Release Page
