@@ -1,3 +1,5 @@
-mmcal-gui usr/local/bin/
+mmcal-gui usr/bin/
+mmcal-gui.desktop usr/share/applications/
 mmcal.png usr/share/icons/
 lotus.png usr/share/icons/
+gcalendar.png usr/share/icons/

@@ -12,16 +12,16 @@ Package: mmcal
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Myanmar Calendar
- Implementation of Myanmar Calendar in C++ and Javascript
+ Implementation of Myanmar Calendar in C++ and JavaScript
  Modern Myanmar Calendrical Calculations
  Support - British, Gregorian, Julian Date to Myanmar Date.
  Web Version is can be Display with English, Burmese, Mon.
 
 Package: mmcal-gui
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, notify-send, zenity, mmcal
+Depends: ${shlibs:Depends}, ${misc:Depends}, libnotify-bin, mmcal
 Description: Myanmar Calendar
- Implementation of Myanmar Calendar in Javascript and Web.
+ Implementation of Myanmar Calendar in JavaScript and Web.
  Modern Myanmar Calendrical Calculations
  Support - British, Gregorian, Julian Date to Myanmar Date.
  can be Display with English, Burmese, Mon.

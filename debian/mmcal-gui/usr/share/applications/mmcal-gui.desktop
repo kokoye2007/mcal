@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Myanmar Calendar
+Exec=mmcal-gui -z
+Icon=mmcal
+Type=Application
+Keywords=Myanmar;Burma;Calendar
+Categories=GTK;GNOME;Utility;
